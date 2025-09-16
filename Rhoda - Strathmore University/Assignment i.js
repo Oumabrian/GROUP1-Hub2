@@ -8,6 +8,6 @@ let age = 20;
 let favoriteFoods = ["Pizza", "Ice Cream", "Sushi"];
 
 // Print them out
-console.log("Name:", name);
+console.log("My name is :", name);
 console.log("Age:", age);
 console.log("Favorite Foods:", favoriteFoods);
