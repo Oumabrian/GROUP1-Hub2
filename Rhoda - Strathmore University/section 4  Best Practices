@@ -1,0 +1,41 @@
+#  Section 4: Best Practices
+"""BAD CODE:
+a=10
+b=20
+print(a+b)
+print(a*b)
+print(a-b)}"""
+
+# using best practices
+
+def perform_operations(num1, num2):
+    """
+    Perform basic arithmetic operations on two numbers.
+    Returns a dictionary with results.
+    """
+    return {
+        "sum": num1 + num2,
+        "product": num1 * num2,
+        "difference": num1 - num2
+    }
+
+number1 = 10
+number2 = 20
+results = perform_operations(number1, number2)
+
+print(f"Sum: {results['sum']}")
+print(f"Product: {results['product']}")
+print(f"Difference: {results['difference']}")
+
+
+# Mini-Challenge: FizzBuzz 
+
+for i in range(1, 31):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
