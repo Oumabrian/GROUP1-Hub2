@@ -1,0 +1,19 @@
+#  Section 1: Variables, Data Types & Operators
+
+# 1. Declare a variable that stores your hub number and prints 
+hub = 2
+print(f"I belong to Hub {hub}")
+
+# 2. Area of a rectangle (length = 8, width = 5)
+length = 8
+width = 5
+area = length * width
+print(f"Area of rectangle is: {area}")
+
+# 3. Quotient, Remainder, Power
+
+x = 15
+y = 4
+print(f"Quotient : {x // y}")   # division
+print(f"Remainder: {x % y}")    # Modulus
+print(f"Power: {x ** y}")       # Exponentiation
