@@ -33,31 +33,3 @@ match day:
     case _: print("Invalid day number")
 
 
-#Section 3: Functions & Scope (15 marks)
-
-# 1. greet(name) function
-def greet(name):
-    print(f"Hello, {name}! Welcome to Hub {hub}.")
-
-greet("Abby")
-
-# 2. sum_even_numbers(n)
-def sum_even_numbers(n):
-    total = 0
-    for i in range(2, n + 1, 2):  # start from 2, step 2
-        total += i
-    return total
-
-print(f"Sum of even numbers from 1 to 10: {sum_even_numbers(10)}")
-
-# 3. Variable scope explanation
-outside_var = "I'm outside!"
-
-def scope_demo():
-    inside_var = "I'm inside!"
-    print(inside_var)  # Accessible here
-    print(outside_var) # Accessible inside function too
-
-scope_demo()
-# print(inside_var)  # Would raise NameError (not accessible outside)
-
